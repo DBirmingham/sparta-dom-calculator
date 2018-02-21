@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function(event){
 	var numbers1 = []
 	var numbers2 = []
 	var operator = ''
-	var final = numbers1.length - 1
-	var viewer = ''
+	// var final = numbers1.length - 1
+	// var viewer = ''
 	var reset = false
 
 	for (var i = 0; i < store.length; i++) {
@@ -37,16 +37,16 @@ document.addEventListener('DOMContentLoaded', function(event){
 	result.addEventListener('click', function (event) {
 		switch (operator) {
 			case '+':
-			view.innerHTML = parseInt(numbers1) + parseInt(numbers2);
+			view.innerHTML = parseInt(numbers1.join('')) + parseInt(numbers2.join(''));
 			break;
 			case '-':
-			view.innerHTML = parseInt(numbers1) - parseInt(numbers2);
+			view.innerHTML = parseInt(numbers1.join('')) - parseInt(numbers2.join(''));
 			break;
 			case '*':
-			view.innerHTML = parseInt(numbers1) * parseInt(numbers2);
+			view.innerHTML = parseInt(numbers1.join('')) * parseInt(numbers2.join(''));
 			break;
 			case '/':
-			view.innerHTML = parseInt(numbers1) / parseInt(numbers2);
+			view.innerHTML = parseInt(numbers1.join('')) / parseInt(numbers2.join(''));
 			break;
 		}
 		reset = true
