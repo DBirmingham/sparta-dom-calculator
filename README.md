@@ -10,5 +10,6 @@ Clone the repository to your computer and run the calc.html file with your brows
 
 ## Built With
 
+* HTML
 * Javascript
 * CSS
